@@ -1,3 +1,5 @@
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -35,3 +37,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Vue-CLI related
+dist/
+yarn-error.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
