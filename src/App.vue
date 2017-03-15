@@ -38,15 +38,25 @@ export default {
 
 .app-header .back-button {
   display: inline-block;
-  margin-right: 10px;
+  border-right: solid 1px #EFEFEF;
+  padding-right: 10px;
 }
 
 .app-header a {
   margin-right: 10px;
+  border-right: solid 1px #EFEFEF;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.app-header a:hover {
+  color: #006699;
 }
 
 .app-header a:last-child {
   margin-right: 0;
+  border-right: none;
+  padding-right: 0;
 }
 
 .u-flex-row {

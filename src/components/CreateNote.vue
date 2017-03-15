@@ -3,7 +3,7 @@
     <header class="app-header">
       <div class="u-flex-row">
         <a class="back-button" @click="goBack()"><i class="el-icon-arrow-left"></i></a>
-        <div class="menu-text u-elastic">Create Note</div>
+        <div class="menu-text u-elastic">{{ id ? 'Editing Note' : 'Create Note' }}</div>
       </div>
     </header>
     <ul class="u-scroller">
@@ -40,7 +40,7 @@ export default {
       const notes = this.$localStorage.get('notes');
       if (this.note.text !== '') {
         const note = Object.assign({}, this.note, {
-          id: uuidV4(),
+          id: this.note.id || uuidV4(),
           timestamp: Date.now(),
         });
         if (this.noteIndex >= 0) {

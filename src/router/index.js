@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import ElementUI from 'element-ui';
+import VueLocalStorage from 'vue-localstorage';
 import 'element-ui/lib/theme-default/index.css';
 import NoteList from '@/components/NoteList';
 import Note from '@/components/Note';
@@ -8,6 +9,7 @@ import CreateNote from '@/components/CreateNote';
 
 Vue.use(Router);
 Vue.use(ElementUI);
+Vue.use(VueLocalStorage);
 
 export default new Router({
   routes: [
